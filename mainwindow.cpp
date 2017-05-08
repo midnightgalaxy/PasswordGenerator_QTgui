@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->setWindowTitle("PasswordGenerator v1.0");
+    this->setWindowTitle("PasswordGenerator [v1.1]");
     length = 20;
     clipboard = QApplication::clipboard();
     //this->setFixedSize(500, 400);
