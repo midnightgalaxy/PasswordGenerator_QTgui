@@ -6,9 +6,24 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowTitle("PasswordGenerator v1.0");
+    length = 20;
+    //this->setFixedSize(500, 400);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::slot2(QString x)
+{
+    length = atoi(x.toStdString().c_str());
+}
+
+void MainWindow::slot3()
+{
+    pass = "";
+    gen.genPassword(pass, length);
+    ui->lineEdit_2->setText(pass.c_str());
 }
