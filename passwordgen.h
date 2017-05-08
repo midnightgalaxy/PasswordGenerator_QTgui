@@ -11,11 +11,10 @@ public:
     Passwordgen(int len, bool up, bool lo, bool in, bool sp);
     //~Passwordgen();   // no need for this atm
 
-    std::string * genPassword(int len = 20);  // returns a string alocated with new, make sure to use delete later!
+    void genPassword(std::string & str, int len = 20);  // returns a string alocated with new, make sure to use delete later!
     void changeParameters(int len, bool up, bool lo, bool in, bool sp);
 
 private:
-
     int genMaster(int x, int y);
     char genRandUpper();
     char genRandLower();
@@ -24,12 +23,10 @@ private:
 
     int length;
 
-
     bool upper;
     bool lower;
     bool intergers;
     bool spec;
-
 };
 
 #endif // PASSWORDGEN_H
