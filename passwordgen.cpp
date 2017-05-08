@@ -26,6 +26,9 @@ void Passwordgen::genPassword(std::string & str, int len)
 {
     length = len;
 
+    if (upper == false && lower == false && intergers == false && spec == false)    // avoid infinitive loop
+        return;
+
     for (int i = 0; i < length; i++)        // actually this is bad code, it has to re-loop if the user doesn't want a certain criteria for his/her password :(
     {
         int val = genMaster(1, 4);
