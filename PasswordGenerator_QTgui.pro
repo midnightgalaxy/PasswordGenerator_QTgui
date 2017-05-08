@@ -24,8 +24,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    passwordgen.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    passwordgen.h
 
 FORMS    += mainwindow.ui
