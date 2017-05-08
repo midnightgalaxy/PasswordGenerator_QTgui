@@ -63,6 +63,19 @@
      <string>Length:</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Copy</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -167,10 +180,27 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slot4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>215</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>slot1()</slot>
   <slot>slot2(QString)</slot>
   <slot>slot3()</slot>
+  <slot>slot4()</slot>
  </slots>
 </ui>
