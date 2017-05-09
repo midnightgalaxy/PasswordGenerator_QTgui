@@ -148,6 +148,7 @@
     <property name="title">
      <string>Help</string>
     </property>
+    <addaction name="actionAbout_2"/>
     <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuFile"/>
@@ -156,12 +157,17 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionAbout">
    <property name="text">
-    <string>About</string>
+    <string>About QT</string>
    </property>
   </action>
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionAbout_2">
+   <property name="text">
+    <string>About</string>
    </property>
   </action>
  </widget>
@@ -207,8 +213,8 @@
    <slot>slot2(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>356</x>
-     <y>129</y>
+     <x>346</x>
+     <y>70</y>
     </hint>
     <hint type="destinationlabel">
      <x>215</x>
@@ -223,8 +229,8 @@
    <slot>slot3()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>355</x>
-     <y>49</y>
+     <x>95</x>
+     <y>120</y>
     </hint>
     <hint type="destinationlabel">
      <x>215</x>
@@ -239,8 +245,8 @@
    <slot>slot4()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>59</x>
-     <y>119</y>
+     <x>209</x>
+     <y>99</y>
     </hint>
     <hint type="destinationlabel">
      <x>215</x>
